@@ -25,6 +25,6 @@ spec:
         name: go-grpc
         resources:
           limits:
-            cpu: 50m
+            cpu: 100m
           requests:
-            cpu: 1m
+            cpu: 10m
