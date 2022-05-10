@@ -23,3 +23,8 @@ spec:
       - image: semutmerah/go-grpc:latest
         imagePullPolicy: Always
         name: go-grpc
+        resources:
+          limits:
+            cpu: 50m
+          requests:
+            cpu: 1m
