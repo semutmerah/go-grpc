@@ -13,6 +13,6 @@ spec:
       containers:
       - name: busybox
         image: busybox:latest
-        command: ["/bin/sh", "-c", "echo 'Halo semua'"]
-      restartPolicy: Never
+        command: ["/bin/sh", "-c"]
+        args: ["echo 'Hallo semua'"]
   backoffLimit: 4
