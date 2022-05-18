@@ -17,9 +17,9 @@ spec:
           name: trigger-ga-script
           defaultMode: 0777
       containers:
-      - name: curl
-        image: curlimages/curl
-        command: ["/bin/ash", "-c"]
+      - name: jwt-tools
+        image: semutmerah/jwt-tools:latest
+        command: ["/bin/bash", "-c"]
         args: ["/script/trigger_workflow.sh"]
         volumeMounts:
         - mountPath: /script
