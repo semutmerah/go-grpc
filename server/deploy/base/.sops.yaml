@@ -1,0 +1,3 @@
+creation_rules:
+  - gcp_kms: projects/svc-prod-340502/locations/global/keyRings/sops/cryptoKeys/sops-key
+  - encrypted_regex: '^(data|stringData)$'

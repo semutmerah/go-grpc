@@ -4,7 +4,11 @@ kind: Kustomization
 namespace: ghz
 resources:
 - namespace.yaml
+- configmap.yaml
 - deployment.yaml
 - service.yaml
 - hpa.yaml
 - trigger_loadtest_job.yaml
+
+generators:
+- secret_generator.yaml
