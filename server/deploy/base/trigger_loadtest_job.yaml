@@ -23,7 +23,7 @@ spec:
       - name: curl
         image: curlimages/curl
         command: ["/bin/ash", "-c"]
-        args: ["/etc/config/trigger_workflow.sh"]
+        args: ["/etc/config/script/trigger_workflow.sh"]
         volumeMounts:
         - name: config-volume
           mountPath: /etc/config
