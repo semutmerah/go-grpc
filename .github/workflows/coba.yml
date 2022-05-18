@@ -2,7 +2,7 @@ name: Test repository dispatch
 
 on:
   repository_dispatch:
-    types: [on-demand-test]
+    types: [post-deployment-job]
 
 jobs:
   analyze:

@@ -53,9 +53,4 @@ spec:
             configMapKeyRef:
               name: trigger-ga-script
               key: REPO_NAME
-        - name: EVENT_TYPE
-          valueFrom:
-            configMapKeyRef:
-              name: trigger-ga-script
-              key: EVENT_TYPE
   backoffLimit: 4
