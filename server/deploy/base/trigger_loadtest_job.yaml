@@ -16,17 +16,14 @@ spec:
         configMap:
           name: trigger-ga-script
           defaultMode: 0777
-          items:
-          - key: trigger_workflow.sh
-            path: script
       containers:
       - name: curl
         image: curlimages/curl
         command: ["/bin/ash", "-c"]
-        args: ["/etc/config/script/trigger_workflow.sh"]
+        args: ["/script/trigger_workflow.sh"]
         volumeMounts:
-        - name: config-volume
-          mountPath: /etc/config
+        - mountPath: /script
+          name: config-volume
         env:
         - name: PEM
           valueFrom:
